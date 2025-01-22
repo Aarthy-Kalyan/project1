@@ -1,0 +1,7 @@
+<div class="progress-bar-container" (click)="onClick($event)">
+    <span class="progress-text">YOUR PROGRESS IS : {{progress}}</span>
+    <div class="progress-bar-background">
+        <div class="progress-bar-foreground" [style.width.%]="progress" [matTooltip]="tooltip"  [matTooltipPosition]="'above'"
+        [style.backgroundColor]="backgroundColor"></div>
+      </div>
+</div>
